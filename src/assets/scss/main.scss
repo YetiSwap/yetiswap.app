@@ -1,0 +1,81 @@
+/*********** CSS TABLE OF CONTENTS *******************
+
+|--- 01.Component -> { Header }
+|--- 01.Component -> { Menu }
+|--- 01.Component -> { Button }
+|--- 01.Component -> { Form }
+|--- 01.Component -> { Pricings }
+|--- 01.Component -> { Slider }
+|--- 03.Theme Utility -> { Image Group }
+|--- 03.Theme Utility -> { Background }
+|--- 03.Theme Utility -> { Hovers }
+|--- 03.Theme Utility -> { Sizes }
+|--- 03.Theme Utility -> { Typograpy }
+|--- THEME CUSTOM STYLES
+
+******************************************************/
+
+@import "theme-mode-control/theme-mode-activation";
+@import "controls/theme-functions";
+@import "controls/theme-variables";
+@import "controls/theme-media-query";
+@import "controls/theme-mixins";
+
+/* ---------------------------
+  01.Component -> { Header } 
+------------------------------*/
+@import "components/header";
+/* ---------------------------
+  01.Component -> { Menu } 
+------------------------------*/
+@import "components/menu";
+/* ---------------------------
+  01.Component -> { Button } 
+------------------------------*/
+@import "components/button";
+/* ---------------------------
+  01.Component -> { Form } 
+------------------------------*/
+@import "components/form";
+/* ---------------------------
+  01.Component -> { pricings } 
+------------------------------*/
+@import "components/pricings";
+/* ---------------------------
+  01.Component -> { slider } 
+------------------------------*/
+@import "components/slider";
+
+/* ---------------------------
+  03.Theme Utility -> { Image Group } 
+------------------------------*/
+@import "theme-utilities/image-group";
+
+/* ---------------------------
+  03.Theme Utility -> { Background } 
+------------------------------*/
+@import "theme-utilities/background";
+/* ---------------------------
+  03.Theme Utility -> { Hovers } 
+------------------------------*/
+@import "theme-utilities/hovers";
+/* ---------------------------
+  03.Theme Utility -> { Sizes } 
+------------------------------*/
+@import "theme-utilities/size";
+/* --------------------------------
+  03.Theme Utility -> { Typograpy } 
+-----------------------------------*/
+@import "theme-utilities/typography";
+
+/* ---------------------------------
+-------> THEME CUSTOM STYLES 
+---------------------------------
+*/
+@import "theme-custom-styles";
+@import "react-custom";
+
+
+
+
+

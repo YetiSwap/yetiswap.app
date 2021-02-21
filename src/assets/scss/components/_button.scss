@@ -1,0 +1,118 @@
+.btn {
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: 65px;
+    min-width: 193px;
+    line-height: 28px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &.btn-sm {
+        min-width: 125px;
+        height: 45px;
+    }
+    &.btn-sm-2 {
+        min-width: 131px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    &.btn-medium {
+        min-width: 158px;
+        height: 45px;
+        font-size: 13px;
+    }
+
+    &.btn-lg {
+        min-width: 172px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    &.btn-xl {
+        min-width: 180px;
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    &.header-btn {
+        min-width: 191px;
+        height: 55px;
+    }
+
+    &.btn-2 {
+        min-width: 217px;
+        height: 55px;
+    }
+    &.btn-3 {
+        min-width: 200px;
+        height: 55px;
+    }
+
+    &.header-btn-2 {
+        width: 170px;
+        height: 45px !important;
+        font-size: 13px;
+        padding: 0;
+    }
+
+    &.with-icon {
+
+        i {
+            margin-left: -5px;
+            margin-right: 3px;
+            font-size: 16px;
+            margin-top: 2px;
+        }
+    }
+
+    &-reset {
+        background: transparent;
+        border: 0;
+    }
+
+    // &-outline{
+    //     border: ;
+    // }
+}
+
+.btn-link {
+    color: $bali-gray;
+    font-size: 16px;
+    font-weight: 500;
+
+    &-with-underline {
+        text-decoration: underline;
+    }
+}
+
+.btn-outline {
+    border: 1px solid $bali-gray;
+    color: $bali-gray !important;
+    &-dark-cloud {
+        &.darkmode-btn {
+            @include dark-mode {
+                border: 1px solid $white;
+                color: $white;
+
+                &:hover {
+                    background-color: $white;
+                    color: $dark-cloud;
+                }
+            }
+        }
+
+    }
+}
+
+.hero-button-groups {
+    a {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

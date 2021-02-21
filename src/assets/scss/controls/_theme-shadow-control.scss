@@ -1,0 +1,41 @@
+$shadow-1 : 0 32px 84px rgba(0, 0, 0, 0.22);
+$shadow-2 : 0 2px 4px rgba(14, 86, 124, 0.17);
+$shadow-3 : 0 32px 84px rgba(14, 86, 124, 0.17);
+$shadow-4 : 0 32px 54px rgba(65, 74, 85, 0.22);
+$shadow-5 : 0 12px 84px rgba(29, 41, 63, 0.12);
+$shadow-6 : 30px 42px 84px rgba(30, 52, 92, 0.16);
+$shadow-7 : 0 -18px 84px rgba(29, 41, 63, 0.12);
+$shadow-8 : 0 32px 44px rgba(29, 41, 63, 0.07);
+$shadow-9 : 0 -8px 94px rgba(124, 128, 135, 0.26);
+$shadow-10 : 0 30px 40px rgba(0, 0, 0, 0.05);
+$shadow-11 : 0 30px 55px rgba(0, 0, 0, 0.15);
+$shadow-12 : 0 24px 64px rgba(0, 0, 0, 0.1);
+$shadow-13 : 0 -98px 114px rgba(0, 0, 0, 0.04);
+$shadow-14 : -30px -26px 104px rgba(0, 0, 0, 0.15);
+$shadow-15 : 70px -26px 134px rgba(0, 0, 0, 0.08);
+$shadow-dodger-blue-2 : 0 32px 54px rgba(37, 138, 255, 0.22);
+$shadow-dodger-blue-3 : 0 4px 50px rgba(35, 58, 255, 0.15);
+$shadow-sunset : 0 4px 50px rgba(228, 22, 22, 0.15);
+$shadow-dodger-blue-1 : 0 4px 50px rgba(34, 176, 252, 0.15);
+
+
+$gr-shadows: (1 : $shadow-1,
+  2 : $shadow-2,
+  3 : $shadow-3,
+  4 : $shadow-4,
+  5 : $shadow-5,
+  6 : $shadow-6,
+  7 : $shadow-7,
+  8 : $shadow-8,
+  9 : $shadow-9,
+  10 : $shadow-10,
+  11 : $shadow-11,
+  12 : $shadow-12,
+  13 : $shadow-13,
+  14 : $shadow-14,
+  15 : $shadow-15,
+  bg-dodger-blue-2 : $shadow-dodger-blue-2,
+  dodger-blue-3 : $shadow-dodger-blue-3,
+  sunset : $shadow-sunset,
+  dodger-blue-1 : $shadow-dodger-blue-1,
+);

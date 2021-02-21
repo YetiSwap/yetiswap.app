@@ -1,0 +1,141 @@
+
+// Button CSS
+.btn-toggle {
+  width: 72px;
+  height: 33px;
+  border-radius: 17px;
+  background-color: #eae9f2 !important;
+  position: relative;
+  margin: 0 15px;
+  border: 3px solid $golden-yellow;
+  span {
+    width: 21px;
+    height: 21px;
+    background-color: $white;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    transition: 0.4s;
+    border-radius: 500px;
+    pointer-events: none;
+  }
+
+  &[data-value-active="yearly"] {
+    background-color: $golden-yellow !important;
+
+    span {
+      left: calc(100% - 25px) !important;
+    }
+  }
+  &-square{
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    padding-top: 1.5px;
+    padding-bottom: 2px;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+
+    @include tablet{
+      padding-top: 2.2px;
+    }
+
+    button{
+      min-width: 100px;
+      min-height: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:$black;
+      background: $white;
+      &:first-child{
+        border-radius: 10px 0 0 10px;
+      }
+      &:nth-child(2){
+        border-radius: 0px 10px 10px 0;
+      }
+      &.active{
+        color:#000;
+        background:transparent;
+      }
+      @include mobile-lg{
+        min-width: 160px;
+      }
+    }
+    
+  }
+}
+
+
+.l4-tab-slider{
+    .slick-list{
+        width: 100%;
+    }
+}
+
+
+
+
+.h1-category-slider{
+  .slick-list{
+    margin: 0 -15px;
+  }
+  .slick-slide{
+    
+    @media screen and(max-width:400px) {
+      padding: 0 15px;
+    }
+  }
+  .single-category{
+    @media screen and(max-width:400px) {
+      width: 100%;
+    }
+  }
+}
+
+
+/* ========== Homepage 3 ========== */
+
+.l3-feature-slider {
+  .slick-track{
+    display: flex;
+  }
+  .slick-slide {
+    opacity: 0.3;
+    transition: 0.4s;
+    margin: 0.75rem;
+    @include tablet {
+        opacity: 1;
+    }
+
+    @include large-desktops {
+        opacity: 0.3;
+    }
+
+    &.slick-active {
+        opacity: 1;
+    }
+  }
+}
+
+.l6-testimonial{
+  .slick-track{
+    display: flex;
+  }
+}
+
+.screenshot-slider-wrapper{
+  .slick-list{
+    cursor: pointer;
+  }
+}
+
+.phone-bg-img{
+  pointer-events: none;
+}

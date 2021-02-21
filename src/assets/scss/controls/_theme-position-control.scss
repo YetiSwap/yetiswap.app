@@ -1,0 +1,33 @@
+// absolute-top-left
+
+$absolute-positions: (
+  top-left: true,
+  top-right: true,
+  center: true,
+  center-right: true,
+  center-left: true,
+  bottom-left: true,
+  bottom-right: true,
+);
+
+$responsive-absolute-positions:(
+  xs: false,
+  sm: true,
+  md: false,
+  lg: true,
+  xl: false
+);
+$responsive-static-positions:(
+  xs: false,
+  sm: false,
+  md: false,
+  lg: false,
+  xl: false
+);
+$responsive-relative-positions:(
+  xs: false,
+  sm: false,
+  md: false,
+  lg: false,
+  xl: false
+);

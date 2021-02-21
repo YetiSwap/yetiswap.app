@@ -1,0 +1,153 @@
+$headings-color: var(--color-headings);
+$white: #fff;
+$black: #000;
+
+$primary: #22b0fc;
+$green: green;
+$secondary: blue;
+$indigo: indigo;
+$gray: gray;
+// own Color
+$dodger-blue-1: #22b0fc; //(primary)
+$dodger-blue-2: #258aff;
+$blue-1: #233aff;
+$blue-2: #1042fd;
+$blue-3: #0f53fa;
+$charade: #2c313a;
+$dark-cloud: #1d293f;
+$bunker: #0b1013;
+$woodsmoke: #0a0a0b;
+$gray-1: #e2e4e8;
+$gray-2: #eceff4;
+$gray-3: #f7f8fa;
+$bali-gray: #3d5a80;
+$alto: #d8d8d8;
+$heather: #b1bacb;
+$stone: #7c8087;
+$bluewood: #313d55;
+$golden-yellow: #ffd166;
+$buttercup: #f5a623;
+$light-orange: #f77321; //(ecstasy)
+$dark-orange: #fb5228; //(outrageous)
+$pumpkin: #ff6b0f;
+$sunset: #ff523d;
+$red: #ff374f;
+$crimson: #e41616;
+$dark-green: #0fbc49;
+$light-green: #76c773;
+$neon-green: #20e9bc;
+$lemon-yellow: #e1f523;
+$scooter: #21c6dd;
+$picton-blue: #37def5;
+$picton-blue-2: #38dff6;
+$polar: #f5fafd;
+$lily-white: #e9f7fe;
+$white-lilac: #f7f9fc;
+$botticelli: #d2e4ed;
+$frost-mint: #e1fff8;
+$cornflower-blue: #c0d5e0;
+$gray-chateau: #a2a6ad;
+$pattens-blue: #e1f4ff;
+$purple-heart: #6a26da;
+$oxford-blue: #3b4656;
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//+========================================================================================
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+  ),
+  $theme-colors
+);
+
+$colors: (
+  "black": $black,
+  "green": $green,
+  "indigo": $indigo,
+  "gray": $gray,
+  "dodger-blue-1": $dodger-blue-1,
+  "dodger-blue-2": $dodger-blue-2,
+  "blue-1": $blue-1,
+  "blue-2": $blue-2,
+  "blue-3": $blue-3,
+  "charade": $charade,
+  "dark-cloud": $dark-cloud,
+  "woodsmoke": $woodsmoke,
+  "gray-1": $gray-1,
+  "gray-2": $gray-2,
+  "gray-3": $gray-3,
+  "bali-gray": $bali-gray,
+  "alto": $alto,
+  "stone": $stone,
+  "bluewood": $bluewood,
+  "golden-yellow": $golden-yellow,
+  "buttercup": $buttercup,
+  "light-orange": $light-orange,
+  "dark-orange": $dark-orange,
+  "pumpkin": $pumpkin,
+  "sunset": $sunset,
+  "red": $red,
+  "crimson": $crimson,
+  "dark-green": $dark-green,
+  "light-green": $light-green,
+  "neon-green": $neon-green,
+  "lemon-yellow": $lemon-yellow,
+  "scooter": $scooter,
+  "picton-blue": $picton-blue,
+  "picton-blue-2": $picton-blue-2,
+  "bunker": $bunker,
+  "polar": $polar,
+  "lily-white ": $lily-white,
+  "white-lilac": $white-lilac,
+  "botticelli": $botticelli,
+  "cornflower-blue": $cornflower-blue,
+  "frost-mint": $frost-mint,
+  "pattens-blue": $pattens-blue,
+  "gray-chateau": $gray-chateau,
+  "oxford-blue": $oxford-blue,
+  "purple-heart": $purple-heart,
+);
+
+// For button color
+$btn-colors: (
+  "black": $black,
+  "white": $white,
+  "buttercup": $buttercup,
+  "red": $red,
+  "blue-3": $blue-3,
+  "golden-yellow": $golden-yellow,
+  "gray-1": $gray-1,
+  "bali-gray": $bali-gray,
+  "dodger-blue-2": $dodger-blue-2,
+  "sunset": $sunset,
+  "pumpkin": $pumpkin,
+  "dark-cloud": $dark-cloud,
+  "dark-green": $dark-green,
+);
+
+// For border color
+$border-colors: (
+  "black": $black,
+  "cornflower-blue": $cornflower-blue,
+);
+
+//-------------------------
+//-- Opacity Values
+//-------------------------
+
+$gr-opacity: ();
+$gr-opacity: map-merge(
+  (
+    visible: 1,
+    1: 0.1,
+    4: 0.4,
+    5: 0.5,
+    7: 0.7,
+    8: 0.8,
+  ),
+  $gr-opacity
+);

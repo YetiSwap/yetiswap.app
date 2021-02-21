@@ -1,0 +1,61 @@
+/* ========== Width ========== */
+.min-w-63{
+    min-width: 63px;
+}
+
+.min-w-76{
+    min-width: 76px;
+}
+.min-w-144{
+    min-width: 144px;
+}
+.max-w-193{
+    max-width: 193px;
+}
+.min-w-255{
+    min-width: 255px;
+}
+.min-w-266{
+    min-width: 266px;
+}
+.max-w-322{
+    max-width: 322px;
+}
+.max-w-413{
+    max-width: 413px;
+}
+.max-w-536{
+    max-width: 536px;
+}
+.max-w-540{
+    max-width: 540px;
+}
+
+
+/* ========== Height ========== */
+.min-h-222{
+    min-height: 222px;
+}
+.h-50{
+    height: 50px !important;
+}
+.h-55{
+    height: 55px !important;
+}
+.h-60{
+    height: 60px !important;
+}
+.max-h-64 {
+    max-height: 64px;
+}
+.min-h-107{
+    min-height: 107px;
+}
+.min-height-100vh{
+    min-height: 100vh;
+}
+.min-height-lg-100vh{
+    @include desktops{
+        min-height: 100vh;
+    }
+}

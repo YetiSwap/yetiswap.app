@@ -1,0 +1,69 @@
+.gr-hover {
+    &-1 {
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: $shadow-3;
+        }
+    }
+
+    &-2 {
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: $shadow-8;
+        }
+    }
+
+    &-3 {
+        transition: 0.4s;
+
+        &:hover {
+            box-shadow: $shadow-11;
+        }
+    }
+
+    &-bg-blue-3 {
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $blue-3;
+            border-color: $blue-3;
+            color: $white;
+        }
+    }
+
+    &-bg-dodger-blue-1 {
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $dodger-blue-1;
+            border-color: $dodger-blue-1;
+            color: $white !important;
+        }
+    }
+
+    &-text-dodger-blue-1 {
+        transition: 0.4s;
+
+        &:hover {
+            color: $dodger-blue-1 !important;
+        }
+    }
+
+    &-text-primary {
+        transition: 0.4s;
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+
+    &-text-blue-3 {
+        transition: 0.4s;
+
+        &:hover {
+            color: $blue-3 !important;
+        }
+    }
+}

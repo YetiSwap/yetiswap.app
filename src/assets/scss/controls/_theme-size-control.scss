@@ -1,0 +1,46 @@
+// This variable affects the `.h-*` and `.w-*` classes.
+
+$responsive-size: true;
+$sizes: ();
+
+// stylelint-disable-next-line scss/dollar-variable-default
+
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    100: 100%,
+    100vh: 100vh,
+  ),
+  $sizes
+);
+
+//-------------------------
+//-- Circle size VaLUES
+//-------------------------
+
+$circle-size: (
+  9: 9px,
+  28: 28px,
+  34: 34px,
+  41: 41px,
+  44: 44px,
+  48: 48px,
+  50: 50px,
+  55: 55px,
+  59: 59px,
+  60: 60px,
+  73: 73px,
+  76: 76px,
+  84: 84px,
+  88: 88px,
+  98: 98px,
+  100: 100px,
+  265: 265px,
+);
+
+//-------------------------
+//-- Square size VaLUES
+//-------------------------
+
+$gr-square-size: (14, 59, 60, 83, 97, 116);

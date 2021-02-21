@@ -1,0 +1,110 @@
+[data-pricing-dynamic][data-value-active="yearly"]{
+  .dynamic-value{
+    &:before{
+    display: inline-block;
+    content: attr(data-yearly);
+    }
+  }
+  [data-pricing-trigger]{
+    background: $primary;
+    span{
+      
+      left: calc(100% - 33px);
+    }
+  }
+}
+[data-pricing-dynamic][data-value-active="monthly"]{
+  .dynamic-value{
+    &:before{
+      display: inline-block;
+      content: attr(data-monthly);
+    }
+  }
+  
+}
+
+.dynamic-value{
+  &:before{
+    display: inline-block;
+    content: attr(data-active);
+  }
+}
+.static-value{
+  &:before{
+    display: inline-block;
+    content: attr(data-active);
+  }
+}
+
+// Button CSS
+.btn-toggle {
+  width: 72px;
+  height: 33px;
+  border-radius: 17px;
+  background-color: #eae9f2 !important;
+  position: relative;
+  margin: 0 15px;
+  border: 3px solid $golden-yellow;
+  span {
+    width: 21px;
+    height: 21px;
+    background-color: $white;
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    transition: 0.4s;
+    border-radius: 500px;
+    pointer-events: none;
+  }
+
+  &[data-value-active="yearly"] {
+    background-color: $golden-yellow !important;
+
+    span {
+      left: calc(100% - 25px) !important;
+    }
+  }
+  &-square{
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    padding-top: 1.5px;
+    padding-bottom: 2px;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+
+    @include tablet{
+      padding-top: 2.2px;
+    }
+
+    span{
+      min-width: 100px;
+      min-height: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:$black;
+       background: $white;
+      &:first-child{
+        border-radius: 10px 0 0 10px;
+      }
+      &:nth-child(2){
+        border-radius: 0px 10px 10px 0;
+      }
+      &.active{
+        color:#000;
+        background:transparent;
+      }
+      @include mobile-lg{
+        min-width: 160px;
+      }
+    }
+    
+  }
+}
