@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 
 import styled from "styled-components";
-import { Helmet } from "react-helmet";
 import AOS from "aos";
 
 import Header from "../Header";
 
 import GlobalContext from "../../context/GlobalContext";
-
-import imgFavicon from "../../assets/favicon.png";
 
 import "../../assets/fonts/fontawesome-5/webfonts/fa-brands-400.ttf";
 import "../../assets/fonts/fontawesome-5/webfonts/fa-regular-400.ttf";
@@ -50,7 +47,7 @@ const Loader = styled.div`
   }
 `;
 
-const Layout = ({ children, pageContext }) => {
+const Layout = ({ children }) => {
   const gContext = useContext(GlobalContext);
 
   const [visibleLoader, setVisibleLoader] = useState(true);
@@ -66,7 +63,7 @@ const Layout = ({ children, pageContext }) => {
   useEffect(() => {
     window.addEventListener(
       "popstate",
-      function(event) {
+      function() {
         // The popstate event is fired each time when the current history entry changes.
         gContext.closeOffCanvas();
       },
@@ -74,7 +71,7 @@ const Layout = ({ children, pageContext }) => {
     );
     window.addEventListener(
       "pushState",
-      function(event) {
+      function() {
         // The pushstate event is fired each time when the current history entry changes.
         gContext.closeOffCanvas();
       },
@@ -87,11 +84,6 @@ const Layout = ({ children, pageContext }) => {
   return (
     <>
       <>
-        <Helmet>
-          <title>Yeti Swap</title>
-          <link rel="icon" type="image/png" href={imgFavicon} />
-          <body data-theme={gContext.theme.bodyDark ? "dark" : "light"} />
-        </Helmet>
         <Loader id="loading" className={visibleLoader ? "" : "inActive"} />
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
           <Header />
