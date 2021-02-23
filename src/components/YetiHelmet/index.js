@@ -21,7 +21,6 @@ const YetiHelmet = ({title, description}) => {
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:url" content={window.location.href} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={ogImage} />
 
