@@ -61,7 +61,7 @@ const Introduction = () => {
                                                 <p className="heading-default-color">The vesting schedule is algorithmically specified as follows: starting from 250 M tokens for the first four years,
                                                     the number of tokens distributed halves every additional four years, meaning that the next four years contribute
                                                     roughly a quarter, and so on. This pattern continues into perpetuity. For reference, during the first four years,
-                                                    roughly 5.2 M YTS will be distributed per day to liquidity miners. The full schedule of distribution of YTS in
+                                                    roughly 5.2 M YTS will be distributed per month to liquidity miners. The full schedule of distribution of YTS in
                                                     the liquidity mining allocation is shown below:</p>
                                             </div>
                                             <div className="mt-9 mt-lg-13">
