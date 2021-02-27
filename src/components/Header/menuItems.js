@@ -5,6 +5,11 @@ export const menuItems = [
         isExternal: true
     },
     {
+        name: "https://info.yetiswap.app/",
+        label: "Analytics",
+        isExternal: true
+    },
+    {
         name: "docs",
         label: "Docs",
         items: [
