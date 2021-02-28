@@ -1,0 +1,81 @@
+.total-stats {
+  display: flex;
+  margin-bottom: 1rem;
+
+  .total-stat-item {
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: $bali-gray;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .total-stat-value {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      color: $ice-blue;
+    }
+
+    .total-stat-text {
+      margin-top: .5rem;
+    }
+  }
+}
+
+.coin-price-list {
+  width: 100%;
+  margin-top: 2rem;
+  color: $dark-cloud;
+
+  table {
+    width: 100%;
+    thead {
+      background-color: $stone;
+
+      tr {
+        border-color: transparent;
+      }
+    }
+    tr {
+      border-bottom: solid 1px $heather;
+    }
+    th, td {
+      padding: .5rem;
+    }
+  }
+
+  .coin-name {
+    display: flex;
+    align-items: center;
+    .coin-image {
+      margin-right: 1rem;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .coin-price-change {
+    padding: .5rem;
+    text-align: center;
+
+    &.bg-red {
+      color: rgb(153, 27, 27) !important;
+      background-color: rgb(254, 226, 226) !important;
+    }
+
+    &.bg-green {
+      color: rgb(6, 95, 70) !important;
+      background-color: rgb(209, 250, 229) !important;
+    }
+
+    i {
+      margin-right: .5rem;
+    }
+  }
+}
