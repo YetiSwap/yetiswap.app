@@ -18,47 +18,17 @@ let coinList = [
         addr: "0xde3A24028580884448a5397872046a019649b084",
     },
     {
-        symbol: "WBTC",
-        id: "wrapped-bitcoin",
-        name: "Wrapped BTC",
-        addr: "0x408D4cD0ADb7ceBd1F1A1C33A0Ba2098E1295bAB",
-    },
-    {
         symbol: "LINK",
         id: "chainlink",
         name: "Chainlink Token",
         addr: "0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651",
     },
     {
-        symbol: "DAI",
-        id: "dai",
-        name: "Dai Stablecoin",
-        addr: "0xbA7dEebBFC5fA1100Fb055a87773e1E99Cd3507a",
-    },
-    {
-        symbol: "UNI",
-        id: "uniswap",
-        name: "Uniswap",
-        addr: "0xf39f9671906d8630812f9d9863bBEf5D523c84Ab",
-    },
-    {
-        symbol: "SUSHI",
-        id: "sushi",
-        name: "SushiToken",
-        addr: "0x39cf1BD5f15fb22eC3D9Ff86b0727aFc203427cc",
-    },
-    {
-        symbol: "AAVE",
-        id: "aave",
-        name: "Aave Token",
-        addr: "0x8cE2Dee54bB9921a2AE0A63dBb2DF8eD88B91dD9",
-    },
-    {
-        symbol: "YFI",
-        id: "yearn-finance",
-        name: "yearn.finance",
-        addr: "0x99519AcB025a0e0d44c3875A4BbF03af65933627",
-    },
+        symbol: "PNG",
+        id: "pangolin",
+        name: "Pangolin",
+        addr: "0x60781C2586D68229fde47564546784ab3fACA982",
+    }
 ];
 export async function getCoinPriceList() {
     const priceList = await Promise.all(
