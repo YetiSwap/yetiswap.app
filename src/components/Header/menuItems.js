@@ -14,7 +14,8 @@ export const menuItems = [
         label: "Docs",
         items: [
             {name: "introduction", label: "Introduction"},
-            {name: "faq", label: "FAQ"}
+            {name: "faq", label: "FAQ"},
+            {name: "nft-marketplace-tutorial", label: "NFT Marketplace Tutorial"}
         ]
     }
 ];
