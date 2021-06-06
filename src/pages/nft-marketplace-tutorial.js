@@ -2,7 +2,6 @@ import React from "react";
 
 import PageWrapper from "../components/PageWrapper";
 import YetiHelmet from "../components/YetiHelmet";
-import YTSDistribution from "../assets/image/YTS-distribution.png";
 
 const NftMarketplaceTutorial = () => {
     return (
@@ -50,8 +49,8 @@ const NftMarketplaceTutorial = () => {
                                                     URL: </strong>https://api.avax-test.network/ext/bc/C/rpc <br/>
                                                 <strong>ChainID:</strong> 0xa869<br/>
                                                 <strong>Symbol: </strong>AVAX <br/>
-                                                <strong>lock Explorer
-                                                    URL:</strong> https://cchain.explorer.avax-test.networkbr/>
+                                                <strong>Block Explorer
+                                                    URL:</strong> https://cchain.explorer.avax-test.network
                                             </p>
                                         </div>
                                         <div className="mt-9 mt-lg-11">
