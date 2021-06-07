@@ -10,7 +10,7 @@ const Introduction = () => {
             <>
                 <YetiHelmet
                         title="Introduction - Yeti Swap"
-                        description="Learn more about Yeti Swap and the YTS token. Yeti Swap is a decentralized exchange for Avalanche and Ethereum assets."
+                        description="Learn more about Yeti Swap and the YTS token. Yeti Swap is a decentralized exchange for Avalanche assets."
                 />
                 <PageWrapper>
                     <div className="pt-20 pb-9 pb-md-16 pb-lg-21">

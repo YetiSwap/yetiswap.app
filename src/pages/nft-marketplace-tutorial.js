@@ -8,7 +8,7 @@ const NftMarketplaceTutorial = () => {
         <>
             <YetiHelmet
                 title="NFT Marketplace Public Beta Tutorial - Yeti Swap"
-                description="NFT Marketplace Public Beta Tutorial. Yeti Swap is a decentralized exchange for Avalanche and Ethereum assets."
+                description="NFT Marketplace Public Beta Tutorial. Yeti Swap is a decentralized exchange for Avalanche."
             />
             <PageWrapper>
                 <div className="pt-20 pb-9 pb-md-16 pb-lg-21">
@@ -19,8 +19,7 @@ const NftMarketplaceTutorial = () => {
                                     <div>
                                         <div className="mt-1 mt-lg-11">
                                             <h5 className="font-size-7 mb-7">NFT Marketplace Public Beta Tutorial</h5>
-                                            <p className="heading-default-color">YetiSwap is a decentralized exchange
-                                                (DEX) which runs on Avalanche, uses the
+                                            <p className="heading-default-color">
                                                 YetiSwap NFT Marketplace public beta has begun. Please follow these
                                                 steps and if you find any error or bug please send your error/bug report
                                                 to <a href="mailto:info@yetiswap.app">info@yetiswap.app</a> mail

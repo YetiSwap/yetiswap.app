@@ -53,7 +53,7 @@ const Hero = ({className, ...rest}) => {
                                     </div>
                                 </div>
                                 <p className="font-size-8 mb-lg-13 pr-sm-15 pr-lg-8 pr-xl-15">
-                                    A decentralized exchange for Avalanche and Ethereum assets with
+                                    A decentralized exchange for Avalanche assets with
                                     fast settlement,
                                     low transaction fees. YetiSwap brings you the best trading opportunities to find and
                                     maximize your yield.

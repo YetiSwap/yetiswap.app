@@ -8,7 +8,7 @@ const Faq = () => {
             <>
                 <YetiHelmet
                         title="FAQ - Yeti Swap"
-                        description="Yeti Swap decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees."
+                        description="Yeti Swap decentralized exchange for Avalanche assets with fast settlement, low transaction fees."
                 />
                 <PageWrapper>
                     <div className="pt-23 pt-md-26 pt-lg-31 pb-13 pb-md-18 pb-lg-23">

@@ -9,7 +9,7 @@ const Index = () => {
             <>
                 <YetiHelmet
                         title="Yeti Swap - Scale Your DeFi Trading"
-                        description="Yeti Swap decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees"
+                        description="Yeti Swap decentralized exchange for Avalanche assets with fast settlement, low transaction fees"
                 />
                 <PageWrapper>
                     <Hero className="position-relative pt-22 pt-lg-31 pb-13 pb-lg-25" />
