@@ -10,12 +10,8 @@ export const menuItems = [
         isExternal: true
     },
     {
-        name: "docs",
+        name: "https://docs.yetiswap.app/",
         label: "Docs",
-        items: [
-            {name: "introduction", label: "Introduction"},
-            {name: "faq", label: "FAQ"},
-            {name: "nft-marketplace-tutorial", label: "NFT Marketplace Tutorial"}
-        ]
+        isExternal: true
     }
 ];

@@ -30,6 +30,7 @@
   width: 100%;
   margin-top: 2rem;
   color: $dark-cloud;
+  overflow-x: auto;
 
   table {
     width: 100%;
@@ -52,8 +53,10 @@
     display: flex;
     align-items: center;
     .coin-image {
+
       margin-right: 1rem;
       img {
+        border-radius: 100%;
         width: 40px;
         height: 40px;
       }
@@ -76,6 +79,143 @@
 
     i {
       margin-right: .5rem;
+    }
+  }
+}
+
+.partners {
+  width: 100%;
+  margin-top: 20px;
+
+  .partners-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .partners-wrapper {
+    width: 100%;
+
+    .partners-group {
+      width: 100%;
+
+      .partners-group-title {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .partner-group-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        flex-wrap: wrap;
+
+        .partners-group-item {
+          display: flex;
+          flex-direction: column;
+          width: 20%;
+          margin-bottom: 15px;
+
+          .partners-group-item-name {
+            width: 100%;
+            text-align: center;
+            color: $dark-cloud;
+            font-size: 1.2rem;
+          }
+
+          .partners-group-item-logo {
+            display: flex;
+            justify-content: center;
+            img {
+              border-radius: 100%;
+              width: 75px;
+            }
+          }
+        }
+      }
+
+      &.nft {
+        margin-top: 25px;
+        .partner-group-list {
+          display: flex;
+          .partners-group-item {
+            width: 15%;
+            .partners-group-item-name {
+              font-size: 0.8rem;
+            }
+
+            .partners-group-item-logo {
+              img {
+                width: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.find-us {
+  margin-top: 20px;
+  border-top: solid 1px #cccccc;
+
+  .find-us-list {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 10px;
+        margin-bottom:10px;
+        :last-child {
+          margin-right: 0;
+        }
+      }
+
+      img {
+        height: 45px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partner-group-list {
+    .partners-group-item {
+      width: 50% !important;
+      margin-bottom: 15px !important;
+    }
+  }
+
+  &.nft {
+    .partner-group-list {
+      .partners-group-item {
+        width: 25% !important;
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  &.nft {
+    .partner-group-list {
+      .partners-group-item {
+        width: 33% !important;
+        margin-bottom: 15px !important;
+      }
     }
   }
 }

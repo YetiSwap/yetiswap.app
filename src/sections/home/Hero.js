@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from "react";
-import {Link} from "gatsby";
 import {getTotalStats} from "../../utils/getTotalStats";
 import {getCoinPriceList} from "../../utils/coinPriceList";
 import priceToString from "../../utils/priceToString";
+import Partners from "./Partners";
+import FindUs from "./FindUs";
 
 
 const Hero = ({className, ...rest}) => {
@@ -68,12 +69,29 @@ const Hero = ({className, ...rest}) => {
                             >
                                 Launch App
                             </a>
-                            <Link to="/introduction" className="btn btn-outline text-white">
+                            <a href="https://exchange.yetiswap.app/#/nft-marketplace"
+                               target="_blank" rel="noopener noreferrer"
+                               className="btn btn-outline text-white"
+                            >
+                                NFT Marketplace
+                            </a>
+                            <a
+                                href="https://docs.yetiswap.app/"
+                                target="_blank" rel="noopener noreferrer"
+                                className="btn btn-outline text-white">
                                 Introduction
-                            </Link>
-                            <Link to="/faq" className="btn btn-outline text-white">
+                            </a>
+                            <a
+                                href="https://gas.yetiswap.app/"
+                                target="_blank" rel="noopener noreferrer"
+                                className="btn btn-outline text-white">
+                                GAS Station
+                            </a>
+                            <a href="https://docs.yetiswap.app/faq"
+                               target="_blank" rel="noopener noreferrer"
+                               className="btn btn-outline text-white">
                                 FAQ
-                            </Link>
+                            </a>
                         </div>
 
                         <div className="col-lg-12 col-md-12 col-sm-12 order-2 order-lg-1 coin-price-list">
@@ -87,36 +105,41 @@ const Hero = ({className, ...rest}) => {
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {coinPriceList.map((coin) => <tr>
-                                            <td className="coin-name">
-                                                <div className="coin-image">
-                                                    <img src={coin.img} alt={coin.symbol} />
-                                                </div>
-                                                <div className="coin-symbol">
-                                                    <div>{coin.symbol}</div>
-                                                    <div>{coin.name}</div>
-                                                </div>
-                                            </td>
-                                            <td className="coin-volume">
-                                                {coin.volume}
-                                            </td>
-                                            <td className="coin-price">
-                                                {coin.price}
-                                            </td>
-                                            <td>
+                                {coinPriceList.map((coin) =>
+                                {
+                                    return  <tr>
+                                        <td className="coin-name">
+                                            <div className="coin-image">
+                                                <img src={coin.img} alt={coin.symbol} />
+                                            </div>
+                                            <div className="coin-symbol">
+                                                <div>{coin.symbol}</div>
+                                                <div>{coin.name}</div>
+                                            </div>
+                                        </td>
+                                        <td className="coin-volume">
+                                            {coin.volume}
+                                        </td>
+                                        <td className="coin-price">
+                                            {coin.price}
+                                        </td>
+                                        <td>
                                               <span className={`coin-price-change ${coin.price_change >= 0 ? 'bg-green':'bg-red'}`}>
                                                   {coin.price_change > 0
-                                                          ? <i className="fas fa-arrow-up" />
-                                                          :<i className="fas fa-arrow-down" />
+                                                      ? <i className="fas fa-arrow-up" />
+                                                      :<i className="fas fa-arrow-down" />
                                                   }
                                                   <span>{Math.abs(coin.price_change).toFixed(2)}%</span>
                                               </span>
-                                            </td>
-                                        </tr>
+                                        </td>
+                                    </tr>
+                                }
                                 )}
                                 </tbody>
                             </table>
                         </div>
+                        <Partners className="position-relative" />
+                        <FindUs />
                     </div>
                 </div>
             </div>

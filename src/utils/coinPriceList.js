@@ -24,10 +24,34 @@ let coinList = [
         addr: "0xB3fe5374F67D7a22886A0eE082b2E2f9d2651651",
     },
     {
+        symbol: "YTS",
+        id: "yetiswap",
+        name: "YetiSwap",
+        addr: "0x488F73cddDA1DE3664775fFd91623637383D6404",
+    },
+    {
         symbol: "PNG",
         id: "pangolin",
         name: "Pangolin",
         addr: "0x60781C2586D68229fde47564546784ab3fACA982",
+    },
+    {
+        symbol: "CNR",
+        id: "canary",
+        name: "Canary",
+        addr: "0x8D88e48465F30Acfb8daC0b3E35c9D6D7d36abaf",
+    },
+    {
+        symbol: "AVE",
+        id: "avaware",
+        name: "Avaware",
+        addr: "0x78ea17559B3D2CF85a7F9C2C704eda119Db5E6dE",
+    },
+    {
+        symbol: "ELK",
+        id: "elk-finance",
+        name: "ELK Finance",
+        addr: "0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C",
     }
 ];
 export async function getCoinPriceList() {
@@ -44,7 +68,7 @@ export async function getCoinPriceList() {
                                 ...coinList[i],
                                 ...(!("img" in coinList[i]) && {
                                     img:
-                                            "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/" +
+                                            "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/" +
                                             coinList[i].addr +
                                             "/logo.png",
                                 }),
