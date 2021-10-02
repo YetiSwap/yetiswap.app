@@ -47,7 +47,7 @@ const FindUs = () => {
                 {
                     findUsList.map((item) =>
                         <li key={`${item.id}_FIND_US`}>
-                            <a href={item.link}><img src={item.logo} /></a>
+                            <a href={item.link} target="_blank"><img src={item.logo} /></a>
                         </li>
                     )
                 }
