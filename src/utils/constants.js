@@ -23,6 +23,7 @@ import NovaXLogo from '../assets/partners/NovaX.jpg'
 import SnowballLogo from '../assets/partners/Snowball.jpg'
 import TubbyReindeerLogo from '../assets/partners/TubbyReindeer.jpg'
 import BridgeProjectLogo from '../assets/partners/BridgeProject.jpg'
+import AvaPepeLogo from '../assets/partners/AvaApe.jpg'
 
 
 export const TOKEN_API_URL = 'https://tokenapi.yetiswap.app/'
@@ -181,5 +182,11 @@ export const NFTPartners = [
         name: 'Bridge Project',
         logo: BridgeProjectLogo,
         website: 'https://bridgeproject.cc/'
+    },
+    {
+        id: 'AvaApe',
+        name: 'Ava Ape',
+        logo: AvaPepeLogo,
+        website: 'https://avapepes.com/home'
     },
 ]
