@@ -184,8 +184,8 @@ export const NFTPartners = [
         website: 'https://bridgeproject.cc/'
     },
     {
-        id: 'AvaApe',
-        name: 'Ava Ape',
+        id: 'AvaPepe',
+        name: 'Ava Pepe',
         logo: AvaPepeLogo,
         website: 'https://avapepes.com/home'
     },
