@@ -2,6 +2,8 @@ import ElkLogo from '../assets/partners/elkfinance.jpg'
 import CanaryLogo from '../assets/partners/canary.jpg'
 import AvawareLogo from '../assets/partners/avaware.jpg'
 import PangolinLogo from '../assets/partners/pangolin.jpg'
+import SingularFarmLogo from '../assets/partners/SingularFarmLogo.png'
+import OliveLogo from '../assets/partners/OliveLogo.png'
 
 import AvaxStarsLogo from '../assets/partners/AvaxStars.jpg'
 import AvaxcellsLogo from '../assets/partners/Avaxcells.jpg'
@@ -24,9 +26,14 @@ import SnowballLogo from '../assets/partners/Snowball.jpg'
 import TubbyReindeerLogo from '../assets/partners/TubbyReindeer.jpg'
 import BridgeProjectLogo from '../assets/partners/BridgeProject.jpg'
 import AvaPepeLogo from '../assets/partners/AvaApe.jpg'
+import MifutoNftLogo from '../assets/partners/MifutoNftLogo.jpg'
+import PreciousPolarBearsLogo from '../assets/partners/PreciousPolarBears.jpg'
+import PixelPopsLogo from '../assets/partners/PixelPops.jpg'
 
 
 export const TOKEN_API_URL = 'https://tokenapi.yetiswap.app/'
+export const FACTORY_ADDRESS= '0x58C8CD291Fa36130119E6dEb9E520fbb6AcA1c3a' // new factory
+export const YETI_SWAP_SUB_GRAPH_URL= "https://api.thegraph.com/subgraphs/name/yetiswap/yetiswap"
 
 export const LiqPoolPartners = [
     {
@@ -52,6 +59,18 @@ export const LiqPoolPartners = [
         name: 'Pangolin',
         logo: PangolinLogo,
         website: 'https://pangolin.exchange/'
+    },
+    {
+        id: 'singular.farm',
+        name: 'Singular Farm',
+        logo: SingularFarmLogo,
+        website: 'https://singular.farm/'
+    },
+    {
+        id: 'olive',
+        name: 'OliveCash',
+        logo: OliveLogo,
+        website: 'https://avax.olive.cash/'
     }
 ]
 
@@ -188,5 +207,23 @@ export const NFTPartners = [
         name: 'Ava Pepe',
         logo: AvaPepeLogo,
         website: 'https://avapepes.com/home'
+    },
+    {
+        id: 'PixelPops',
+        name: 'Pixel Pops NFT',
+        logo: PixelPopsLogo,
+        website: 'https://pixelpops.world/'
+    },
+    {
+        id: 'PreciousPolarBears',
+        name: 'PreciousPolarBears',
+        logo: PreciousPolarBearsLogo,
+        website: 'https://preciouspolarbears.com/'
+    },
+    {
+        id: 'MifutoNft',
+        name: 'MiFuTo NFT',
+        logo: MifutoNftLogo,
+        website: 'https://mifuto.com/'
     },
 ]

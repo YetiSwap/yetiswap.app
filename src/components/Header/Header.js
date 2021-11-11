@@ -92,6 +92,16 @@ const Header = () => {
                                                     <i className="fab fa-github" />
                                                 </a>
                                             </li>
+                                            <li>
+                                                <a
+                                                    target="_blank"
+                                                    href="https://discord.com/invite/EnXz5wD6"
+                                                    className="heading-default-color ml-10"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <i className="fab fa-discord" />
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                             )}

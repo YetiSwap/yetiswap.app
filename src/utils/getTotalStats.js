@@ -1,20 +1,29 @@
-import {TOKEN_API_URL} from "./constants";
+import {FACTORY_ADDRESS, YETI_SWAP_SUB_GRAPH_URL} from "./constants";
 
+const query = `
+	query {
+		pangolinFactory(id: "${FACTORY_ADDRESS}") {
+			totalVolumeUSD
+			totalLiquidityUSD
+		}
+	}
+`;
 
 export async function getTotalStats() {
-  const req = await fetch(`${TOKEN_API_URL}yts/total-stats`, {
-    method: "GET",
+  const req = await fetch(YETI_SWAP_SUB_GRAPH_URL, {
+    method: "POST",
     headers: {"Content-Type": "application/json"},
-  }).then((req) => req.json()).catch(() => ({
-    totalLiquidityAVAX: 0,
-    totalVolumeAVAX: 0,
-  }));
+    body: JSON.stringify({query}),
+  });
 
-  const {totalLiquidityUSD, totalVolumeUSD} = req;
+  const {
+    data: {
+      pangolinFactory: {totalLiquidityUSD, totalVolumeUSD},
+    },
+  } = await req.json();
 
   return {
     totalLiquidityAVAX: totalLiquidityUSD,
     totalVolumeAVAX: totalVolumeUSD,
   };
 }
-
