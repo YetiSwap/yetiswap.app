@@ -1,9 +1,10 @@
 import ElkLogo from '../assets/partners/elkfinance.jpg'
 import CanaryLogo from '../assets/partners/canary.jpg'
 import AvawareLogo from '../assets/partners/avaware.jpg'
-import PangolinLogo from '../assets/partners/pangolin.jpg'
 import SingularFarmLogo from '../assets/partners/SingularFarmLogo.png'
 import OliveLogo from '../assets/partners/OliveLogo.png'
+import RocoFinanceLogo from '../assets/partners/RocoFinance.png'
+import SrnArtGalleryLogo from '../assets/partners/SrnArtGallery.jpg'
 
 import AvaxStarsLogo from '../assets/partners/AvaxStars.jpg'
 import AvaxcellsLogo from '../assets/partners/Avaxcells.jpg'
@@ -55,12 +56,6 @@ export const LiqPoolPartners = [
         website: 'https://avaware.network/'
     },
     {
-        id: 'png',
-        name: 'Pangolin',
-        logo: PangolinLogo,
-        website: 'https://pangolin.exchange/'
-    },
-    {
         id: 'singular.farm',
         name: 'Singular Farm',
         logo: SingularFarmLogo,
@@ -71,6 +66,18 @@ export const LiqPoolPartners = [
         name: 'OliveCash',
         logo: OliveLogo,
         website: 'https://avax.olive.cash/'
+    },
+    {
+        id: 'rocoFinance',
+        name: 'RocoFinance',
+        logo: RocoFinanceLogo,
+        website: 'https://roco.finance/'
+    },
+    {
+        id: 'srnArtGallery',
+        name: 'srnArtGallery',
+        logo: SrnArtGalleryLogo,
+        website: 'https://srnartgallery.com/'
     }
 ]
 

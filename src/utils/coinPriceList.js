@@ -30,12 +30,6 @@ let coinList = [
         addr: "0x488F73cddDA1DE3664775fFd91623637383D6404",
     },
     {
-        symbol: "PNG",
-        id: "pangolin",
-        name: "Pangolin",
-        addr: "0x60781C2586D68229fde47564546784ab3fACA982",
-    },
-    {
         symbol: "CNR",
         id: "canary",
         name: "Canary",
@@ -52,6 +46,18 @@ let coinList = [
         id: "elk-finance",
         name: "ELK Finance",
         addr: "0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C",
+    },
+    {
+        symbol: "SISTA",
+        id: "srnartgallery-tokenized-arts",
+        name: "srnArtGallery Tokenized Arts",
+        addr: "0x4e840AADD28DA189B9906674B4Afcb77C128d9ea",
+    },
+    {
+        symbol: "ROCO",
+        id: "roco-finance",
+        name: "Roco Finance",
+        addr: "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
     }
 ];
 export async function getCoinPriceList() {

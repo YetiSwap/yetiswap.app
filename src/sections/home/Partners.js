@@ -15,7 +15,7 @@ const Partners = ({className, ...rest}) => {
         <div className="partners-wrapper">
            <div className="partners-group">
                <div className="partners-group-title">
-                   <h3>Liq Pool Partners</h3>
+                   <h3>Partners</h3>
                </div>
                <div className="partner-group-list">
                    {
