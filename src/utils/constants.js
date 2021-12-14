@@ -4,7 +4,6 @@ import AvawareLogo from '../assets/partners/avaware.jpg'
 import SingularFarmLogo from '../assets/partners/SingularFarmLogo.png'
 import OliveLogo from '../assets/partners/OliveLogo.png'
 import RocoFinanceLogo from '../assets/partners/RocoFinance.png'
-import SrnArtGalleryLogo from '../assets/partners/SrnArtGallery.jpg'
 
 import AvaxStarsLogo from '../assets/partners/AvaxStars.jpg'
 import AvaxcellsLogo from '../assets/partners/Avaxcells.jpg'
@@ -30,6 +29,7 @@ import AvaPepeLogo from '../assets/partners/AvaApe.jpg'
 import MifutoNftLogo from '../assets/partners/MifutoNftLogo.jpg'
 import PreciousPolarBearsLogo from '../assets/partners/PreciousPolarBears.jpg'
 import PixelPopsLogo from '../assets/partners/PixelPops.jpg'
+import KairaNetworkLogo from '../assets/partners/KairaNetwork.jpg'
 
 
 export const TOKEN_API_URL = 'https://tokenapi.yetiswap.app/'
@@ -76,9 +76,33 @@ export const LiqPoolPartners = [
     {
         id: 'srnArtGallery',
         name: 'srnArtGallery',
-        logo: SrnArtGalleryLogo,
+        logo: "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/0x4e840AADD28DA189B9906674B4Afcb77C128d9ea/logo.png",
         website: 'https://srnartgallery.com/'
-    }
+    },
+    {
+        id: 'avaxtars',
+        name: 'Avaxtars',
+        logo: "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/0x397bBd6A0E41bdF4C3F971731E180Db8Ad06eBc1/logo.png",
+        website: 'https://avaxtars.com/'
+    },
+    {
+        id: 'KairaNetworkLogo',
+        name: 'Kaira Network',
+        logo: KairaNetworkLogo,
+        website: 'https://www.kaira.network/'
+    },
+    {
+        id: 'penguinFinance',
+        name: 'Penguin Finance',
+        logo: "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/0xe896CDeaAC9615145c0cA09C8Cd5C25bced6384c/logo.png",
+        website: 'https://penguinfinance.org/'
+    },
+    {
+        id: 'YayGames',
+        name: 'YAY Games',
+        logo: "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/0x01C2086faCFD7aA38f69A6Bd8C91BEF3BB5adFCa/logo.png",
+        website: 'https://www.yay.games/'
+    },
 ]
 
 

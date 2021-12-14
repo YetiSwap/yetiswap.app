@@ -57,34 +57,58 @@ let coinList = [
         symbol: "ROCO",
         id: "roco-finance",
         name: "Roco Finance",
-        addr: "0xb2a85c5ecea99187a977ac34303b80acbddfa208",
-    }
+        addr: "0xb2a85C5ECea99187A977aC34303b80AcbDdFa208",
+    },
+    {
+        symbol: "AVXT",
+        id: "avaxtars",
+        name: "Avaxtars",
+        addr: "0x397bBd6A0E41bdF4C3F971731E180Db8Ad06eBc1",
+    },
+    {
+        symbol: "PEFI",
+        id: "penguin-finance",
+        name: "Penguin Finance",
+        addr: "0xe896CDeaAC9615145c0cA09C8Cd5C25bced6384c",
+    },
+    {
+        symbol: "YAY",
+        id: "yay-games",
+        name: "YAY Games",
+        addr: "0x01C2086faCFD7aA38f69A6Bd8C91BEF3BB5adFCa",
+    },
 ];
 export async function getCoinPriceList() {
     const priceList = await Promise.all(
             coinList.map(({id}, i) => {
-                return fetch(
-                        "https://api.coingecko.com/api/v3/coins/" +
-                        id +
-                        "?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false",
-                )
-                        .then((res) => res.json())
-                        .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
-                            return  {
-                                ...coinList[i],
-                                ...(!("img" in coinList[i]) && {
-                                    img:
-                                            "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/" +
-                                            coinList[i].addr +
-                                            "/logo.png",
-                                }),
-                                price: "$" + current_price.usd.toLocaleString("en-US"),
-                                priceValue: current_price.usd,
-                                price_change: price_change_percentage_24h,
-                                volume: "$" + total_volume.usd.toLocaleString("en-US")
-                            };
-                        });
+                return getCoinGeckoApi(id, i);
             }),
     )
     return  [...priceList];
+}
+
+function getCoinGeckoApi(id, i) {
+    return fetch(
+        "https://api.coingecko.com/api/v3/coins/" +
+        id +
+        "?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false",
+    )
+        .then((res) => res.json())
+        .then(({market_data: {current_price, price_change_percentage_24h, total_volume}}) => {
+            return  {
+                ...coinList[i],
+                ...(!("img" in coinList[i]) && {
+                    img:
+                        "https://raw.githubusercontent.com/YetiSwap/tokens/main/assets/" +
+                        coinList[i].addr +
+                        "/logo.png",
+                }),
+                price: "$" + current_price.usd.toLocaleString("en-US"),
+                priceValue: current_price.usd,
+                price_change: price_change_percentage_24h,
+                volume: "$" + total_volume.usd.toLocaleString("en-US")
+            };
+        }).catch((e) => {
+            console.error('Price Error', id, e)
+        });
 }

@@ -25,11 +25,8 @@ const Hero = ({className, ...rest}) => {
 
     }, [])
 
-
-    const avaxData = coinPriceList.find((item) => item.id==="avalanche-2");
-    const avaxPrice = avaxData ? avaxData.priceValue:0;
-    const totalVolume = avaxPrice ? priceToString(Math.trunc((stats.totalVolumeAVAX * avaxPrice))):0
-    const totaliquidity = avaxPrice ? priceToString(Math.trunc((stats.totalLiquidityAVAX * avaxPrice))):0
+    const totalVolume = priceToString(Math.trunc((stats.totalVolumeAVAX)))
+    const totaliquidity = priceToString(Math.trunc((stats.totalLiquidityAVAX)))
 
     return (
             <div className={className} {...rest}>
@@ -42,7 +39,7 @@ const Hero = ({className, ...rest}) => {
                                     data-aos="fade-right"
                                     data-aos-delay={500}
                             >
-                                <h1 className="font-size-12 mb-9">Scale Your DeFi Trading with YetiSwap</h1>
+                                <h1 className="font-size-12 mb-9">Future of Decentralized Trading DeFi Trading NFT Marketplace</h1>
                                 <div className="total-stats">
                                     <div className="total-stat-item">
                                         <div className="total-stat-value">${totalVolume}</div>
@@ -54,10 +51,8 @@ const Hero = ({className, ...rest}) => {
                                     </div>
                                 </div>
                                 <p className="font-size-8 mb-lg-13 pr-sm-15 pr-lg-8 pr-xl-15">
-                                    A decentralized exchange for Avalanche assets with
-                                    fast settlement,
-                                    low transaction fees. YetiSwap brings you the best trading opportunities to find and
-                                    maximize your yield.
+                                    YetiSwap is a decentralized exchange (DEX) and NFT marketplace , running on the Avalanche blockchain. Yeti Swap uses the same automated market-making (AMM) model as Uniswap and features a native governance token called YTS that is fully community driven, with users capable of trading all native Avalanche tokens. In a crowded marketplace with multiple contenders, YetiSwap offers three critically important benefits: fast and cost-efficient trades, with a fair and open token distribution system.
+                                    YetiSwap is the only NFT marketplace offering royalties on Avalanche, profiting both NFT artists and collection owners.
                                 </p>
                             </div>
                         </div>
