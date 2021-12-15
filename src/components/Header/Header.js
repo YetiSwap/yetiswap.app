@@ -95,7 +95,7 @@ const Header = () => {
                                             <li>
                                                 <a
                                                     target="_blank"
-                                                    href="https://discord.com/invite/EnXz5wD6"
+                                                    href="https://discord.com/invite/aKm7XVYzup"
                                                     className="heading-default-color ml-10"
                                                     rel="noopener noreferrer"
                                                 >
