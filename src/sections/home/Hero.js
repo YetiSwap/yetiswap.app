@@ -8,22 +8,7 @@ import FindUs from "./FindUs";
 
 const Hero = ({className, ...rest}) => {
     const [stats, setStats] = useState({totalLiquidityAVAX: 0, totalVolumeAVAX: 0});
-    const [coinPriceList, setCoinPriceList] = useState([]);
 
-    useEffect(() => {
-        getCoinPriceList().then((priceListResult) => {
-            setCoinPriceList(priceListResult)
-        })
-
-        getTotalStats()
-                .then((result) => {
-                    const totalLiquidityAVAX = result.totalLiquidityAVAX ? parseFloat(result.totalLiquidityAVAX).toFixed(0):0;
-                    const totalVolumeAVAX = result.totalVolumeAVAX ? parseFloat(result.totalVolumeAVAX).toFixed(0):0;
-
-                    setStats({totalVolumeAVAX, totalLiquidityAVAX})
-                })
-
-    }, [])
 
     const totalVolume = priceToString(Math.trunc((stats.totalVolumeAVAX)))
     const totaliquidity = priceToString(Math.trunc((stats.totalLiquidityAVAX)))
@@ -39,7 +24,7 @@ const Hero = ({className, ...rest}) => {
                                     data-aos="fade-right"
                                     data-aos-delay={500}
                             >
-                                <h1 className="font-size-12 mb-9">Future of Decentralized Trading DeFi Trading NFT Marketplace</h1>
+                                <h1 className="font-size-12 mb-9">Future of Decentralized Trading DeFi</h1>
                                 <div className="total-stats">
                                     <div className="total-stat-item">
                                         <div className="total-stat-value">${totalVolume}</div>
@@ -89,50 +74,6 @@ const Hero = ({className, ...rest}) => {
                             </a>
                         </div>
 
-                        <div className="col-lg-12 col-md-12 col-sm-12 order-2 order-lg-1 coin-price-list">
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Volume (24 hrs)</th>
-                                    <th>Price</th>
-                                    <th>Price Change</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {coinPriceList.map((coin) =>
-                                {
-                                    return  <tr>
-                                        <td className="coin-name">
-                                            <div className="coin-image">
-                                                <img src={coin.img} alt={coin.symbol} />
-                                            </div>
-                                            <div className="coin-symbol">
-                                                <div>{coin.symbol}</div>
-                                                <div>{coin.name}</div>
-                                            </div>
-                                        </td>
-                                        <td className="coin-volume">
-                                            {coin.volume}
-                                        </td>
-                                        <td className="coin-price">
-                                            {coin.price}
-                                        </td>
-                                        <td>
-                                              <span className={`coin-price-change ${coin.price_change >= 0 ? 'bg-green':'bg-red'}`}>
-                                                  {coin.price_change > 0
-                                                      ? <i className="fas fa-arrow-up" />
-                                                      :<i className="fas fa-arrow-down" />
-                                                  }
-                                                  <span>{Math.abs(coin.price_change).toFixed(2)}%</span>
-                                              </span>
-                                        </td>
-                                    </tr>
-                                }
-                                )}
-                                </tbody>
-                            </table>
-                        </div>
                         <Partners className="position-relative" />
                         <FindUs />
                     </div>
