@@ -59,7 +59,7 @@ const Hero = ({className, ...rest}) => {
                             >
                                 Launch App
                             </a>
-                            <a href="https://exchange.yetiswap.app/#/nft-marketplace"
+                            <a href="https://marketplace.yetiswap.app/"
                                target="_blank" rel="noopener noreferrer"
                                className="btn btn-outline text-white"
                             >
