@@ -84,50 +84,7 @@ const Hero = ({className, ...rest}) => {
                             </a>
                         </div>
 
-                        <div className="col-lg-12 col-md-12 col-sm-12 order-2 order-lg-1 coin-price-list">
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Volume (24 hrs)</th>
-                                    <th>Price</th>
-                                    <th>Price Change</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                {coinPriceList.map((coin) =>
-                                {
-                                    return  <tr>
-                                        <td className="coin-name">
-                                            <div className="coin-image">
-                                                <img src={coin.img} alt={coin.symbol} />
-                                            </div>
-                                            <div className="coin-symbol">
-                                                <div>{coin.symbol}</div>
-                                                <div>{coin.name}</div>
-                                            </div>
-                                        </td>
-                                        <td className="coin-volume">
-                                            {coin.volume}
-                                        </td>
-                                        <td className="coin-price">
-                                            {coin.price}
-                                        </td>
-                                        <td>
-                                              <span className={`coin-price-change ${coin.price_change >= 0 ? 'bg-green':'bg-red'}`}>
-                                                  {coin.price_change > 0
-                                                      ? <i className="fas fa-arrow-up" />
-                                                      :<i className="fas fa-arrow-down" />
-                                                  }
-                                                  <span>{Math.abs(coin.price_change).toFixed(2)}%</span>
-                                              </span>
-                                        </td>
-                                    </tr>
-                                }
-                                )}
-                                </tbody>
-                            </table>
-                        </div>
+
                         <Partners className="position-relative" />
                         <FindUs />
                     </div>
