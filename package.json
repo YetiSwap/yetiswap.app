@@ -21,7 +21,7 @@
     "google-map-react": "^1.1.7",
     "gr-bootstrap-extender": "^1.1.3",
     "lodash": "^4.17.15",
-    "node-sass": "^4.11.0",
+    "sass": "^1.54.9",
     "polished": "^3.4.2",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.15",

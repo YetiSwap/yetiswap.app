@@ -34,6 +34,7 @@
 
   table {
     width: 100%;
+
     thead {
       background-color: $stone;
 
@@ -41,10 +42,13 @@
         border-color: transparent;
       }
     }
+
     tr {
       border-bottom: solid 1px $heather;
     }
-    th, td {
+
+    th,
+    td {
       padding: .5rem;
     }
   }
@@ -52,9 +56,11 @@
   .coin-name {
     display: flex;
     align-items: center;
+
     .coin-image {
 
       margin-right: 1rem;
+
       img {
         border-radius: 100%;
         width: 40px;
@@ -128,6 +134,7 @@
           .partners-group-item-logo {
             display: flex;
             justify-content: center;
+
             img {
               border-radius: 100%;
               width: 75px;
@@ -138,10 +145,13 @@
 
       &.nft {
         margin-top: 25px;
+
         .partner-group-list {
           display: flex;
+
           .partners-group-item {
             width: 15%;
+
             .partners-group-item-name {
               font-size: 0.8rem;
             }
@@ -168,6 +178,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
     ul {
       list-style: none;
       display: flex;
@@ -178,7 +189,8 @@
 
       li {
         margin-right: 10px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
+
         :last-child {
           margin-right: 0;
         }
@@ -199,7 +211,7 @@
     }
   }
 
-  &.nft {
+  .nft {
     .partner-group-list {
       .partners-group-item {
         width: 25% !important;
@@ -210,7 +222,7 @@
 }
 
 @media only screen and (max-width: 425px) {
-  &.nft {
+  .nft {
     .partner-group-list {
       .partners-group-item {
         width: 33% !important;

@@ -7,7 +7,19 @@ export const menuItems = [
     {
         name: "https://marketplace.yetiswap.app/",
         label: "NFT Marketplace",
-        isExternal: true
+        isExternal: true,
+        items: [
+            {
+                name: "https://marketplace.yetiswap.app/",
+                label: "Avalanche",
+                isExternal: true
+            },
+            {
+                name: "https://bobamarket.yetiswap.app/",
+                label: "BobaNetwork",
+                isExternal: true
+            }
+        ]
     },
     {
         name: "https://info.yetiswap.app/",
