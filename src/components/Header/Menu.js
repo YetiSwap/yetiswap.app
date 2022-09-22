@@ -24,7 +24,7 @@ const Menu = () => {
                       onClick={(e) => e.preventDefault()}
                     >
                       {label}
-                      <i className="icon icon-small-down"/>
+                      <i className="icon icon-small-down" />
                     </a>
                     <ul className="gr-menu-dropdown dropdown-menu">
                       {items.map((subItem, indexSub) => {
@@ -48,25 +48,26 @@ const Menu = () => {
                                 <ul className="gr-menu-dropdown dropdown-menu dropdown-right">
                                   {subItem.items.map(
                                     (itemInner, indexInnerMost) => (
-                                      <li
-                                        className="drop-menu-item"
-                                        key={itemInner.name + indexInnerMost}
-                                      >
-                                        {itemInner.isExternal ? (
-                                          <a
-                                            href={`${itemInner.name}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                          >
-                                            {itemInner.label}
-                                          </a>
-                                        ) : (
-                                          <Link to={`/${itemInner.name}`}>
-                                            {itemInner.label}
-                                          </Link>
-                                        )}
-                                      </li>
-                                    )
+                                        <li
+                                          className="drop-menu-item"
+                                          key={itemInner.name + indexInnerMost}
+                                        >
+                                          {itemInner.isExternal ? (
+                                            <a
+                                              href={`${itemInner.name}`}
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                            >
+                                              {itemInner.img && <img src={itemInner.img} height={"32px"} width={"32px"} />}
+                                              {itemInner.label}
+                                            </a>
+                                          ) : (
+                                            <Link to={`/${itemInner.name}`}>
+                                              {itemInner.label}
+                                            </Link>
+                                          )}
+                                        </li>
+                                      )
                                   )}
                                 </ul>
                               </li>
@@ -78,6 +79,7 @@ const Menu = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                   >
+                                    {subItem.img && <img src={subItem.img} height={"32px"} width={"32px"} />}
                                     {subItem.label}
                                   </a>
                                 ) : (

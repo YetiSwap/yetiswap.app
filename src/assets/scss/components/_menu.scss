@@ -131,6 +131,12 @@
     }
     >a{
       color: inherit;
+      display: flex;
+      align-items: center;
+
+      >img {
+        margin-right: 10px;
+      }
       @include desktops{
         transition: .4s;
       }
